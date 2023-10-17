@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    body .wrapper header {
+        height: 95px;
+    }
+
+    body .wrapper header nav a {
+        font-size: 18px;
+        padding: 0 5px 0 5px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
