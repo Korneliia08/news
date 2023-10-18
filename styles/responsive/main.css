@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     body {
         margin: 0;
     }
@@ -16,8 +16,30 @@
 
     body .wrapper main {
         background-color: rgb(221 221 221);
-        height: calc(100% - 120px);
+        min-height: calc(100% - 175px);
     }
 
 
+    .currentProposedNewDiv {
+        max-width: 250px;
+        min-height: 250px;
+    }
+
+    .titleArticle {
+        max-height: 35px;
+        font-size: 15px;
+    }
+
+    .time {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+
+    .spanReadMore {
+        padding: 5px;
+    }
+
+    .imgStyle {
+        width: 200px;
+    }
 }

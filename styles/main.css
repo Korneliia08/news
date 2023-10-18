@@ -10,13 +10,91 @@ body .wrapper {
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
 }
 
 
 body .wrapper main {
     background-color: rgb(221 221 221);
-    height: calc(100% - 145px);
+    min-height: calc(100% - 145px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    row-gap: 15px;
+    column-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
+
+.currentProposedNewDiv {
+    background-color: #373737;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    row-gap: 10px;
+    max-width: 280px;
+    height: 290px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px 5px inset #343434, 1px 1px 4px 1px #191919;
+    transition: 500ms scale, 100ms backgroud-color;
+}
+
+.currentProposedNewDiv:hover {
+    cursor: pointer;
+    scale: 1.01;
+    background-color: #4d0000;
+    box-shadow: 0px 0px 60px 5px inset #3f0101, 1px 1px 4px 1px #464545;
+}
+
+
+.titleArticle {
+    display: block;
+    overflow-y: hidden;
+    max-height: 47px;
+    color: white;
+    font-size: 19px;
+    text-shadow: 0px 0px 2px black;
+}
+
+.time {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.spanReadMore {
+    color: #9d0303;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 500ms;
+    border: 1px solid transparent;
+}
+
+.spanReadMore:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid red;
+}
+
+.spanReadMore:active {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.imgStyle {
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 1px gray;
+}
+
 
 
 
