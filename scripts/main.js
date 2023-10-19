@@ -1,1 +1,1 @@
-let startPanel = new StartPanel();
+let startPanel = new ProposedNews();

@@ -1,0 +1,91 @@
+@media (max-width: 1000px) {
+    body .wrapper main .currentArticle {
+        max-width: 500px;
+        min-height: 200px;
+    }
+
+    .imgArticle {
+        width: 350px;
+    }
+
+    .titleArticleCurrent,
+    .publishedAt,
+    .contentArticle {
+        font-size: 22px;
+    }
+
+    .publishedAt,
+    .author {
+        font-size: 14px;
+    }
+
+    .contentArticle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+    body .wrapper main .currentArticle {
+        max-width: 400px;
+        min-height: 200px;
+        padding: 15px 5px 15px 5px;
+    }
+
+    .imgArticle {
+        width: 300px;
+    }
+
+    .titleArticleCurrent,
+    .publishedAt,
+    .contentArticle {
+        font-size: 20px;
+    }
+
+    .publishedAt,
+    .author {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    body .wrapper main .currentArticle {
+        max-width: 350px;
+        min-height: 200px;
+    }
+
+    .imgArticle {
+        width: 250px;
+    }
+
+    .titleArticleCurrent,
+    .publishedAt,
+    .contentArticle {
+        font-size: 20px;
+    }
+
+    .publishedAt,
+    .author {
+        font-size: 12px;
+    }
+
+    .contentArticle {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 400px) {
+    body .wrapper main {
+        padding: 15px;
+    }
+
+    body .wrapper main .currentArticle {
+        max-width: 280px;
+        min-height: 200px;
+    }
+
+    .imgArticle {
+        width: 150px;
+    }
+}
+
+

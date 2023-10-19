@@ -52,3 +52,9 @@ body .wrapper header nav a:hover {
     font-size: 25px;
 }
 
+
+body .wrapper header nav .selectedOption {
+    background-color: #5b5b5b;
+    border-bottom: 2px solid red;
+}
+

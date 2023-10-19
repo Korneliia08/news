@@ -1,0 +1,49 @@
+body .wrapper main .currentArticle {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    row-gap: 15px;
+    background-color: #3D3D3D;
+    border-radius: 20px;
+    max-width: 800px;
+    min-height: 200px;
+    box-shadow: 1px 1px 20px 2px #706f6f, -1px -1px 20px 2px #313131, 0px 0px 20px 5px inset #2c2b2b, 0px 0px 10px 2px inset #3a3a3a;
+}
+
+.imgArticle {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 1px #969696;
+}
+
+.titleArticleCurrent,
+.publishedAt,
+.contentArticle {
+    color: white;
+    font-size: 25px;
+    text-shadow: 0px 0px 2px black;
+    text-align: center;
+}
+
+.publishedAt,
+.author {
+    color: rgba(100, 165, 250, 0.81);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.author {
+    color: #cb0909;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.contentArticle {
+    font-size: 21px;
+}
