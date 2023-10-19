@@ -7,6 +7,16 @@ This website:
 * it is a responsive website,
 * made using class;
 
+## Getting started
+The project must be run locally because NewsApi in the free version only supports HTTPS requests from the localhost domain.
+### Step 1: Download repository
+
+### Step 2: Unzip repozitory to directory
+
+### Step 3: Run file ,,index.html"
+
+
+
 ## Panel "Proposed news"
 ![image](https://github.com/Korneliia08/news/blob/master/assets/images/proposedArticles.png)
 ## Panel "Current Article"
