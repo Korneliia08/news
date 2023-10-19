@@ -7,9 +7,8 @@ class ProposedNews {
     lastVisited;
 
     constructor() {
-        this.whichOption = "Oleksandr Zinchenko";
-        this.createFetch();
         this.nav.addEventListener("click", this.specifyingOption.bind(this));
+        document.querySelector("#default").click()
     }
 
     specifyingOption(event) {
@@ -23,6 +22,7 @@ class ProposedNews {
         currentAInNav.classList.add("selectedOption");
         this.createFetch();
         this.lastVisited = event.target;
+
     }
 
     createFetch() {
@@ -56,10 +56,11 @@ class ProposedNews {
         }
         let xMax = 20;
         for (let x = 1; x < xMax; x++) {
-            if (jsonObj.articles[x].title == "[Removed]") {
+            if (jsonObj.articles[x].title == "[Removed]" || jsonObj.articles[x].urlToImage == null) {
                 xMax++;
                 continue;
             }
+
             let divForProposedNew = document.createElement("div");
             divForProposedNew.classList.add("currentProposedNewDiv");
             divForProposedNew.dataset.id = x.toString();
