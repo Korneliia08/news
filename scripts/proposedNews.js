@@ -54,7 +54,7 @@ class ProposedNews {
         if (childrens.length > 1) {
             childrens.forEach(children => children.remove());
         }
-        let xMax = 16;
+        let xMax = 20;
         for (let x = 1; x < xMax; x++) {
             if (jsonObj.articles[x].title == "[Removed]") {
                 xMax++;
