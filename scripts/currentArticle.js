@@ -34,7 +34,7 @@ class CurrentArticle {
         let author = document.createElement("h5");
         author.classList.add("author");
         author.textContent = "Author: " + objData.author;
-
+        this.currentArticleHTML.innerHTML = '';
         this.currentArticleHTML.prepend(titleArticle);
         this.currentArticleHTML.append(publishedAt);
         this.currentArticleHTML.append(imgArticle);

@@ -28,6 +28,7 @@ class ProposedNews {
     createFetch() {
         fetch("https://newsapi.org/v2/everything?" + new URLSearchParams({
             q: this.whichOption,
+            language: "en",
             apiKey: "f7e38cf8db9943fd9c0694f5eb25467f"
         }))
             .then(response => {
@@ -53,8 +54,8 @@ class ProposedNews {
         if (childrens.length > 1) {
             childrens.forEach(children => children.remove());
         }
-        let xMax = 7;
-        for (let x = 0; x < xMax; x++) {
+        let xMax = 16;
+        for (let x = 1; x < xMax; x++) {
             if (jsonObj.articles[x].title == "[Removed]") {
                 xMax++;
                 continue;
